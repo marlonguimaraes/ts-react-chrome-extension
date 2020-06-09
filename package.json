@@ -1,0 +1,20 @@
+{
+    "name": "ts-react-chrome-extension",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "dependencies": {
+        "@types/react": "^16.9.35",
+        "@types/react-dom": "^16.9.8",
+        "global": "^4.4.0",
+        "parcel": "^1.12.4",
+        "parcel-plugin-static-files-copy": "^2.4.1",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1",
+        "typescript": "^3.9.5"
+    },
+    "scripts": {
+        "build": "parcel build src/*.tsx src/*.ts src/*.html",
+        "start": "parcel src/*.tsx src/*.ts src/*.html"
+    }
+}
