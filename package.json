@@ -14,7 +14,7 @@
         "typescript": "^3.9.5"
     },
     "scripts": {
-        "build": "parcel build src/*.tsx src/*.ts src/*.html",
-        "start": "parcel src/*.tsx src/*.ts src/*.html"
+        "build": "fish build.sh",
+        "start": "rm -rf dist && parcel html/*.html"
     }
 }
