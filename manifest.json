@@ -4,15 +4,9 @@
     "description": "Easily block temporarily sites so you can get things done",
     "manifest_version": 2,
     "background": {
-        "scripts": ["chrome/background.js"],
-        "persistent": false
+        "scripts": ["chrome/background.js"]
     },
-    "permissions": [
-        "activeTab",
-        "storage",
-        "declarativeContent",
-        "webRequestBlocking"
-    ],
+    "permissions": ["webRequest", "webRequestBlocking", "<all_urls>"],
     "options_page": "html/options.html",
     "browser_action": {
         "default_popup": "html/popup.html",

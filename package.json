@@ -16,5 +16,8 @@
     "scripts": {
         "build": "fish build.sh",
         "start": "rm -rf dist && parcel html/*.html"
+    },
+    "devDependencies": {
+        "@types/chrome": "^0.0.115"
     }
 }
