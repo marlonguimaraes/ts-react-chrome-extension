@@ -12,7 +12,7 @@
 ### Prerequisites
 
 ```bash
-$ yarn
+$ yarn/npm install
 ```
 
 ### Running locally
@@ -20,7 +20,7 @@ $ yarn
 This is used locally during development time.
 
 ```bash
-$ yarn run start
+$ yarn/npm run start
 ```
 
 ### Production build
@@ -30,7 +30,7 @@ This is when you need to load or ship your project to chrome.
 1) Build
 
 ```bash
-$ yarn run build
+$ yarn/npm run build
 ```
 
 2) Load the `/dist` (located in the root folder) folder to chrome.
