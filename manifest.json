@@ -1,20 +1,26 @@
 {
-    "name": "Simple Site Blocker",
-    "version": "1.0",
-    "description": "Easily block temporarily sites so you can get things done",
-    "manifest_version": 2,
-    "background": {
-        "scripts": ["chrome/background.js"]
-    },
-    "permissions": ["webRequest", "webRequestBlocking", "<all_urls>"],
-    "options_page": "html/options.html",
-    "browser_action": {
-        "default_popup": "html/popup.html",
-        "default_icon": {
-            "32": "images/icon32.png"
-        }
-    },
-    "icons": {
-        "32": "images/icon32.png"
+  "name": "TypeScript-React Chrome Extension Template",
+  "version": "1.0",
+  "description": "Create Chrome extensions using React and TypeScript!",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "chrome/background.js"
+  },
+  "permissions": ["tabs"],
+  "options_page": "html/options.html",
+  "action": {
+    "default_popup": "html/popup.html",
+    "default_icon": {
+      "32": "images/icon32.png"
     }
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';"
+  },
+  "icons": {
+    "16": "images/icon32.png",
+    "32": "images/icon32.png",
+    "48": "images/icon32.png",
+    "128": "images/icon32.png"
+  }
 }
