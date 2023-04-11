@@ -5,7 +5,7 @@ const divStyle = {
   display: 'flex',
   justifyContent: 'center',
   flexDirection: 'column',
-  width: '300px',
+  width: '301px',
   gap: '30px',
 };
 

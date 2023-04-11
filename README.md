@@ -17,7 +17,8 @@ $ yarn/npm install
 
 ### Running locally
 
-This is used locally during development time.
+This will automatically run a build on code changes, so you don't need to update the local chrome extension to see your changes
+
 
 ```bash
 $ yarn/npm run start

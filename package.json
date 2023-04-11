@@ -13,9 +13,25 @@
   },
   "scripts": {
     "build": "sh build.sh",
-    "start": "rm -rf dist && parcel html/*.html"
+    "start": "yarn run nodemon --exec yarn run build"
   },
   "devDependencies": {
-    "@types/chrome": "^0.0.115"
+    "@types/chrome": "^0.0.115",
+    "nodemon": "^2.0.22"
+  },
+  "nodemonConfig": {
+    "verbose": true,
+    "ignore": [
+      "dist/",
+      ".cache/"
+    ],
+    "delay": 2500,
+    "watch": [
+      "react/",
+      "html/",
+      "images/",
+      "./manifest.json"
+    ],
+    "ext": "ts,tsx,css,json,html,png"
   }
 }
