@@ -7,11 +7,12 @@ const divStyle = {
   flexDirection: 'column',
   width: '301px',
   gap: '30px',
+  padding: '35px',
 };
 
 const Popup = () => {
   return (
-    <div style={divStyle}>
+    <div style={divStyle as React.CSSProperties}>
       <button type='button' onClick={() => alert('popup.html')}>
         Click me! (react/popup.tx)
       </button>
