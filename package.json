@@ -25,11 +25,12 @@
       "dist/",
       ".cache/"
     ],
-    "delay": 2500,
+    "delay": 500,
     "watch": [
       "react/",
       "html/",
       "images/",
+      "chrome/",
       "./manifest.json"
     ],
     "ext": "ts,tsx,css,json,html,png"
