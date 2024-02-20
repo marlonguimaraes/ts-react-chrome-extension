@@ -35,3 +35,10 @@ $ yarn/npm run build
 ```
 
 2) Load the `/dist` (located in the root folder) folder to chrome.
+
+### Send and receive messages
+
+Take a look at these two files to see examples on sending and receiving messages:
+
+1. Send message: `react/popup.tsx:19`
+2. Receive and respond messages: `chrome/content-script.ts:3`
