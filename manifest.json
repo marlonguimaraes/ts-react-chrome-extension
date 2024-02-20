@@ -22,5 +22,11 @@
     "32": "images/icon32.png",
     "48": "images/icon32.png",
     "128": "images/icon32.png"
-  }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["chrome/content-script.js"]
+    }
+  ]
 }

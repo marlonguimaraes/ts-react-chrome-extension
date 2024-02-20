@@ -1,0 +1,1 @@
+console.log('Content script loaded! Find me at chrome/content-script.ts');
